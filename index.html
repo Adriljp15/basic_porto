@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Basic Porto</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css"/>
+
+    <!-- Fonts -->
+    <link rel="stylesheet" href=""/>
+
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    </head>
+<body>
+    <!-- start header -->
+    <header class="navbar">
+        <nav>
+            <div class="logo">
+                <img src="assets/foto.jpeg" alt="logo">
+            </div>
+            <div id="menu-icon" class="menu-icon">
+                <i class="fas fa-bars"></i>
+            </div>
+            <ul id="nav-links" class="nav-links">
+                <li><a href="/">Home</a></li>
+                <li><a href="#experience">About</a></li>
+                <li><a href="#bio">Bio</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!-- end of header -->
+    
+    
+    <!-- start main -->
+    <main>
+        <div class="merge">
+            <div class="box">
+                <div class="intro">
+                    <div class="intro-text">
+                        <h1>Welcome to my website</h1>
+                        <h2>This is my personal website</h2>
+                        <p>Graduate from Krisnadwipayana University Jakarta Majoring in Informatics Engineering
+                            with GPA 3.71 in 2024</p>                    
+                        <button class="contact-btn" onclick="document.getElementById('contact').scrollIntoView({behavior: 'smooth' });">Contact Me</button>
+                        <div class="sosmed">
+                            <ul>
+                                <li><a href="https://www.instagram.com/deriljupen/profilecard/?igsh=MXN1d2ZrYXcyYTAwYw=="><i class="fa-brands fa-instagram"></i></a></li>
+                                <li><a href="https://www.linkedin.com/in/adriljupentus/"><i class="fab fa-linkedin-in"></i></a></li>
+                                <li><a href="https://github.com/Adriljp15"><i class="fa-brands fa-github"></i></a></li>
+                                <li><a href="mailto:adriljupentus@gmail.com"><i class="fa-solid fa-envelope"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+        
+                    <div class="intro-image">
+                        <div class="slider">
+                            <div class="slide active">
+                                <img src="assets/foto.jpeg" alt="myphoto">
+                            </div>
+                            <div class="slide">
+                                <img src="assets/me.jpeg" alt="another image 1">
+                            </div>
+                            <div class="slide">
+                                <img src="assets/me2.jpeg" alt="another image 2">
+                            </div>
+                        </div>
+                        <button class="prev" onclick="changeSlide(-1)">&#10094;</button>
+                        <button class="next" onclick="changeSlide(1)">&#10095;</button>
+                    </div>
+                </div>
+            </div>
+        
+            <aside class="inspirational-quote">
+                <img src="assets/col.jpg" alt="Inspiration Image" class="quote-image">
+                <blockquote>
+                    <p>"A dream doesn't become reality through magic; it takes sweat, determination and hard work."</p>
+                    <footer>- Colin Powell</footer>
+                </blockquote>
+            </aside>
+
+        </div>
+        
+
+        <!-- aside -->
+        <aside class="right-bar">
+            <div class="social-media">
+                <ul>
+                    <li><a><img src="assets/foto.jpeg" alt="" class="aside-foto"></a></li>
+                    <li><a href="https://www.instagram.com/deriljupen/profilecard/?igsh=MXN1d2ZrYXcyYTAwYw=="><i class="fa-brands fa-instagram"></i></a></li>
+                    <li><a href="https://www.linkedin.com/in/adriljupentus/"><i class="fab fa-linkedin-in"></i></a></li>
+                    <li><a href="https://github.com/Adriljp15"><i class="fa-brands fa-github"></i></a></li>
+                    <li><a href="mailto:adriljupentus@gmail.com"><i class="fa-solid fa-envelope"></i></a></li>
+                </ul>
+            </div>
+        </aside>
+
+        <!-- start  bio -->
+        <div class="box1" id="bio">
+            <div class="bio">
+                <h2>Biography</h2>
+                <div class="bio-image">
+                    <img src="assets/person.png" alt="person">
+                </div>
+                <p>Hello. I’m Adril, a man who is studying the world of informatics. Especially in the ui/ux section. 
+                    I graduated from informatics engineering from one of the private campuses in Jakarta, Krisnadwipayana University. I am very interested in informatics, especially frontend. 
+                    I like to develop my ideas by creating design displays and socializing with teammates. I have internship experience in the ministerial institutions and course training in informatics. My goal for a career in informatics is to develop creative ideas in my work and contribute to a project for a company. 
+                    I believe in my skill in this field, and I will continue to try hard to achieve success.
+                </p>
+            </div>
+            <div class="line-with-text">
+                <span>Believe</span>
+                <span>Problem Solve</span>
+                <span>Spirit</span>
+            </div>
+            <div class="bio">
+                <button class="cv-btn">Download My CV</button>
+            </div>
+        </div>
+        
+        <!-- start experience -->
+        <div class="experience" id="experience">
+            <div class="experience-header">
+                <h2>Experience</h2>
+                <img src="assets/experience.png" alt="experience">
+            </div>
+            <div class="experience-card">
+              <h3>Education</h3>
+              <ul>
+                <li><i class="fa-solid fa-school"></i>Web Develop 8 by Dibimbing.id</li>
+                <li><i class="fa-solid fa-school"></i>Fundamental Course by Revou</li>
+                <li><i class="fa-solid fa-school"></i>Fundamental Python Paideia by Karier.mu</li>
+                </ul>
+            </div>
+            <div class="experience-card">
+              <h3>Work</h3>
+              <ul>
+                <li><i class="fa-solid fa-circle-check"></i>Data Entry Assistant by PT Hengsheng New Energy Material</li>
+                <li><i class="fa-solid fa-circle-check"></i>Internship PPID by KKP</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- project -->
+        <div class="box2">
+            <section class="project-section">
+                <div class="project-header">
+                    <h2>My Last Project</h2>
+                    <img src="assets/project-manager.png" alt="">
+                </div>
+                <div class="card-container">
+                  <div class="card">
+                    <img src="assets/course.png" alt="Project 1">
+                    <h3>Landing Page</h3>
+                    <p>Frontend Dev Course by Revou</p>
+                    <div class="buttons">
+                      <a href="https://revou-fundamental-course.github.io/11-nov-24-Adriljp15/">Show</a>
+                      <a href="#">Preview</a>
+                    </div>
+                  </div>
+                  <div class="card">
+                    <img src="assets/figmaporto.png" alt="Project 1">
+                    <h3>UI Portofolio</h3>
+                    <p>Design UI Porto in Figma</p>
+                    <div class="buttons">
+                      <a href="https://www.figma.com/proto/TFb0igCgmNzisMrirITxHH/deriljupen?node-id=1-3&node-type=frame&t=tnHGmWf8nnEvb4lV-1&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1">Show</a>
+                      <a href="#">Preview</a>
+                    </div>
+                  </div>
+                  <div class="card">
+                    <img src="assets/ppid.png" alt="Project 1">
+                    <h3>Graphic Design</h3>
+                    <p>Design Instagram Posts PPID KKP</p>
+                    <div class="buttons">
+                      <a href="https://www.instagram.com/p/CxFeay-rMVp/?igsh=MWJlbmp3eDdoa3Rvbw==">Show</a>
+                      <a href="#">Preview</a>
+                    </div>
+                  </div>
+                  <div class="card">
+                    <img src="assets/c1.png" alt="Project 1">
+                    <h3>UI / UX</h3>
+                    <p>Design UI/UX Information Service Web PPID KKP</p>
+                    <div class="buttons">
+                      <a href="https://www.figma.com/proto/jXQ21gZv0sitsdDxEoHb3t/Untitled?node-id=1-213&node-type=canvas&t=d32YyikH829pougm-1&scaling=scale-down&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=1%3A213">Show</a>
+                      <a href="#">Preview</a>
+                    </div>
+                  </div>
+                  
+                </div>
+              </section>
+        </div>
+        
+        <!-- skill -->
+        <div class="skill">
+            <div class="skill-header">
+                <div class="text-container">
+                    <h1>My Oriented Skills</h1>
+                    <h2>What Can I Do</h2>
+                </div>
+                <div class="skill-content">
+                    <img src="assets/skill.png" alt="">
+                    <p>I learned some materials as a form of self-development in my future job. Starting from technical skills and interpersonal skills. Here are some of the skills I have.</p>
+                </div>
+            </div>
+            <div class="line-text">
+                <hr>
+                <span>See below</span>
+            </div>
+            <!-- hard skill -->
+            <div class="skill-section">
+                <div class="skill-box">
+                    <h2>Hard Skill</h2>
+                    <div class="skill-container">
+                        <div class="skill-card">
+                            <img src="assets/html.png" alt="">
+                            <h3>HTML5</h3>
+                            <p>Intermediate</p>
+                        </div>
+                    </div>
+                    <div class="skill-container">
+                        <div class="skill-card">
+                            <img src="assets/css-3.png" alt="">
+                            <h3>CSS3</h3>
+                            <p>Intermediate</p>
+                        </div>
+                    </div>
+                    <div class="skill-container">
+                        <div class="skill-card">
+                            <img src="assets/js.png" alt="">
+                            <h3>Javascript</h3>
+                            <p>Beginner</p>
+                        </div>
+                    </div>
+                    <div class="skill-container">
+                        <div class="skill-card">
+                            <img src="assets/figma.png" alt="">
+                            <h3>Figma</h3>
+                            <p>Intermediate</p>
+                        </div>
+                    </div>
+                </div>
+            
+            
+            <!-- softskill -->
+                <div class="skill-box">
+                    <h2>Soft Skill</h2>
+                    <div class="skill-container">
+                        <div class="skill-card">
+                            <img src="assets/problemsolve.png" alt="">
+                            <h3>Problem Solving</h3>
+                            <p>Identification - Solution- Implementation - Evaluation</p>
+                        </div>
+                    </div>
+                    <div class="skill-container">
+                        <div class="skill-card">
+                            <img src="assets/partners.png" alt="">
+                            <h3>Teamwork</h3>
+                            <p>Colaborate - Communication - Trust - Goals</p>
+                        </div>
+                    </div>
+                    <div class="skill-container">
+                        <div class="skill-card">
+                            <img src="assets/multitasking.png" alt="">
+                            <h3>Multitasking</h3>
+                            <p>Time - Productivity - Focus - Skills - Balance</p>
+                        </div>
+                    </div>
+                    <div class="skill-container">
+                        <div class="skill-card">
+                            <img src="assets/decision.png" alt="">
+                            <h3>Critical Thinking</h3>
+                            <p>Analysis - Logic - Creativity - Question - Decision</p>
+                        </div>
+                    </div>
+                </div>
+            </div>   
+        </div>
+
+    </main>
+
+    <div class="footer" id="contact">
+        <div class="footer-box">
+            <div class="footer-content">
+                <div class="footer-text">
+                    <h1>Contact Me</h1>
+                    <h2>Follow my social media</h2>
+                </div>
+                <div class="footer-card">
+                    <h3>Call Me</h3>
+                    <p><i class="fas fa-phone"></i> : +628777269476</p>
+                    <p><i class="fas fa-envelope"></i> : adriljupentus@gmail.com</p>
+                </div>
+            </div>
+            <div class="medsos">
+                <div class="social-media-card" id="wave">
+                    <ul>
+                        <li><a href="https://www.instagram.com/deriljupen/profilecard/?igsh=MXN1d2ZrYXcyYTAwYw=="><i class="fab fa-instagram"></i></a></li>
+                        <li><a href="https://www.linkedin.com/in/adriljupentus/"><i class="fab fa-linkedin-in"></i></a></li>
+                        <li><a href="https://github.com/Adriljp15"><i class="fab fa-github"></i></a></li>
+                        <li><a href="mailto:adriljupentus@gmail.com"><i class="fas fa-envelope"></i></a></li>
+                    </ul>
+                    <p>&copy; 2024 Adril Jupentus. All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+</html>
